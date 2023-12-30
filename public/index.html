@@ -20,37 +20,30 @@
 <body class="bg-slate-900 font-poppins">
 
     <!-- START NAVBAR -->
-    <nav class="flex flex-row w-full py-3 bg-white">
-        <div class="basis-1/2 text-left ml-5 font-semibold">
-            <a href="">Icikiwir Group</a>
-        </div>
-        <div class="basis-1/2 flex justify-end mr-5">
-            <button data-collapse-toggle="navbar-hamburger" type="button"
-                class="inline-flex items-center justify-end float-left p-2 w-7 h-7 text-sm text-gray-500 rounded-lg hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900"+>
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />       
-                </svg>
-            </button>
-        </div>
-        <div class="basis-1/2 space-x-5 text-right mr-36 hidden">
-            <a href="">About Us</a>
-            <a href="">Gallery</a>
+    <nav class="py-3 bg-white">
+        <div class="flex flex-row w-full ">
+            <div class="basis-1/2 text-left ml-5 font-semibold">
+                <a href="" class="bg-gradient-to-tr from-cyan-500 to-slate-700 bg-clip-text text-transparent">Icikiwir Group</a>
+            </div>
+            <div class="basis-1/2 flex justify-end mr-5">
+                <button data-collapse-toggle="navbar-hamburger" id="burgerBtn" type="button"
+                    class="inline-flex items-center justify-end float-left p-2 w-7 h-7 text-sm text-gray-500 rounded-lg hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900"+>
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />       
+                    </svg>
+                </button>
+            </div>
         </div>
 
-
+        <div class="hidden" id="mobileNavbar">
+            <div class="flex flex-col mx-5">
+                <a href=""class="py-2">About Us</a>
+                <a href="">Gallery</a>
+            </div>
+        </div>
     </nav>
-
-    <!-- <nav class="flex flex-row w-full py-6 bg-white">
-        <div class="basis-1/2 text-left ml-36 font-semibold">
-            <a href="">Icikiwir Group</a>
-        </div>
-        <div class="basis-1/2 space-x-5 text-right mr-36">
-            <a href="">About Us</a>
-            <a href="">Gallery</a>
-        </div>
-    </nav> -->
     <!-- END NAVBAR -->
 
     <!-- START FIRST CONTENT -->
@@ -60,6 +53,7 @@
     </section> -->
     <!-- END FIRST CONTENT -->
 
+    <script src="/src/js/index.js"></script>
 </body>
 
 </html>
