@@ -41,8 +41,8 @@
 
                 <!-- >640px responsive navbar -->
                 <div class="hidden sm:flex flex-row mr-12 space-x-7 md:mr-20 lg:mr-32">
-                    <a href="#ourGroup" class="">About Us</a>
-                    <a href="#ourMemories">Gallery</a>
+                    <a href="#ourGroup" class="hover:underline">About Us</a>
+                    <a href="#ourMemories" class="hover:underline">Gallery</a>
                 </div>
             </div>
         </div>
@@ -236,10 +236,24 @@
     </section>
     <!-- END GALLERY -->
 
-    <footer class="mt-5">
-
+    <!-- START FOOTER -->
+    <footer class="bg-transparent rounded-lg shadow mt-10">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap bg-gradient-to-tr from-red-500 to-violet-600 bg-clip-text text-transparent">Icikiwir-Group</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <span class="text-gray-500 sm:text-center">© 2023 <a href="#" class="hover:underline">Icikiwir-Group</a>. All Rights Reserved.</span>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto " />
+            <!-- <span class="block text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://flowbite.com/" class="hover:underline"></a>. All Rights Reserved.</span> -->
+        </div>
     </footer>
-
+    <!-- END FOOTER -->
 
 
     <script src="/src/js/index.js"></script>
