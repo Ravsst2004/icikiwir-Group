@@ -556,18 +556,6 @@ video {
   border-width: 0;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
-
-.row-span-3 {
-  grid-row: span 3 / span 3;
-}
-
 .float-left {
   float: left;
 }
@@ -629,10 +617,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .block {
   display: block;
 }
@@ -653,6 +637,10 @@ video {
   display: none;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -661,8 +649,44 @@ video {
   height: 1.75rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.max-h-36 {
+  max-height: 9rem;
+}
+
+.max-h-72 {
+  max-height: 18rem;
+}
+
+.max-h-10 {
+  max-height: 2.5rem;
+}
+
+.max-h-60 {
+  max-height: 15rem;
 }
 
 .w-5 {
@@ -685,16 +709,8 @@ video {
   flex-basis: 50%;
 }
 
-.grid-flow-col {
-  grid-auto-flow: column;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -713,12 +729,12 @@ video {
   justify-content: flex-end;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-x-7 > :not([hidden]) ~ :not([hidden]) {
@@ -758,6 +774,11 @@ video {
   border-color: rgb(30 41 59 / var(--tw-border-opacity));
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
@@ -766,16 +787,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-gray-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-tr {
@@ -963,16 +974,12 @@ video {
     margin-top: 1.25rem;
   }
 
-  .md\:mt-7 {
-    margin-top: 1.75rem;
-  }
-
   .md\:grid {
     display: grid;
   }
 
-  .md\:h-full {
-    height: 100%;
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:text-4xl {
@@ -992,11 +999,6 @@ video {
     margin-right: 18rem;
   }
 
-  .lg\:my-2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   .lg\:ml-32 {
     margin-left: 8rem;
   }
@@ -1011,10 +1013,6 @@ video {
 
   .lg\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .lg\:-mb-5 {
-    margin-bottom: -1.25rem;
   }
 
   .lg\:grid-cols-3 {
