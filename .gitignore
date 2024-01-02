@@ -1,5 +1,10 @@
 /node_modules
+/src/**/*
 /DESIGN.png
+/package-lock.json
+/package.json
+/tailwind.config.js
+/README.md
 
 
 .github/**/node_modules
